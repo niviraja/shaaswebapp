@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>registration form</title>
+	<link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+  <p>Firstname  </p>
+  <input onchange="clicked()" type="text" name="name" id="inp">  
+  <p id="fn"></p>
+  <p>Lastname</p>
+  <input onchange="clicked7()" type="text" name="lname" id="inp7">
+  <p id="ln"></p>
+  <p>Phone number</p>
+  <input onchange="clicked1()" type="number" name="phonenumber" id="inp1">
+  <p id="pn"></p>
+  <p>Email ID</p>
+  <input onchange="clicked2()" type="text" name="emailid" id="inp2">
+  <p id="mid"></p>
+ <!--   <div class="dropdown">
+  <button onclick="clicked3()" class="dropbtn">State</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">TAMIL NADU</a>
+    <a href="#">KERALA</a>
+    <a href="#">AP</a>
+  </div>
+</div>-->
+<label for="State">State</label>
+    <select id="State" name="State">
+      <option value="Tamil Nadu">Tamil Nadu</option>
+      <option value="Kerala">Kerala</option>
+      <option value="Andhra Pradesh">Andhra Pradesh</option>
+    </select>
+  <p>Password</p>
+  <input onchange="clicked4()" type="Password" name="Password" id="inp3">
+  <p>Confirmation password</p>
+  <input onchange="clicked5()" type="Password" name="Password" id="inp4">
+  <p id="pwdc"></p>
+  <button onclick="clicked6()">Submit</button>
+  <p id="fin"></p>
+
+  <script type="text/javascript">
+  var flag=0;
+  function clicked()
+	{   var x=document.getElementById("inp").value;
+	    console.log(x);
+        if(x==="c"){
+        	document.getElementById("inp").style.borderColor="red";
+        	document.getElementById("fn").innerHTML="Don't you have a name";
+        	flag=1;
+        }}
+  function clicked7()
+
+        	{var x=document.getElementById("inp7").value;
+	    console.log(x);
+        if(x==="c"){document.getElementById("inp7").style.borderColor="red";
+        	document.getElementById("ln").innerHTML="Don't you have a lastname";
+        	flag=1;
+
+            }}
+  function clicked1()
+            { var x=document.getElementById("inp1").value;
+             console.log(x);
+             if(x<7000000000||x>9999999999)
+             	{document.getElementById("inp1").style.borderColor="red";
+             document.getElementById("pn").innerHTML="Enter a valid phone number";
+             flag=1;
+        	}}
+  function clicked2()
+        	{var x=document.getElementById("inp2").value;
+              console.log(x);
+              if(x.indexOf('@')<0)
+              {document.getElementById("inp2").style.borderColor="red";document.getElementById("mid").innerHTML="Enter a valid mail id";
+              flag=1;
+           }
+             }
+  function clicked3()
+             {
+             	var x=document.getElementById("myDropdown").value;
+             	console.log(x);
+             }
+  function clicked4()
+             {var y=document.getElementById("inp3").value;
+              console.log(y);
+             
+              
+
+           var z=document.getElementById("inp4").value;
+              console.log(z);}
+  function clicked5()
+              {var y=document.getElementById("inp3").value;
+              console.log(y);
+             
+              
+
+           var z=document.getElementById("inp4").value;
+              console.log(z);
+              if(!(z==y))
+              {document.getElementById("inp4").style.borderColor="red";document.getElementById("pwdc").innerHTML="Passwords don't match";
+                flag=1;
+            }}
+            function clicked6()
+            {if(flag===1)
+            	document.getElementById("fin").innerHTML="Enter valid entries";
+            	else
+            		document.getElementById("fin").innerHTML="Submitted successfully";
+            }
+  </script> 
+</body>
+</html>
