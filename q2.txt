@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cube</title>
+	<style>
+	.face{
+		position: absolute;
+		top: 200px;
+		left: 300px;
+		width: 300px;
+		height: 300px;
+		background: url('./die_face_2.png') center no-repeat;
+		border: 1px solid black;
+		transform-origin: center center -125px;
+		backface-visibility: hidden;
+	}
+	#f1{
+		-webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+		-webkit-animation: anim_face1 10s infinite;
+	}
+	#f2{
+		-webkit-transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg);
+		-webkit-animation: anim_face2 10s infinite;
+	}
+	#f3{
+		-webkit-transform: rotateX(0deg) rotateY(270deg) rotateZ(0deg);
+		-webkit-animation: anim_face3 10s infinite;
+	}
+	#f4{
+		-webkit-transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+		-webkit-animation: anim_face4 10s infinite;
+	}
+	#f5{
+		-webkit-transform: rotateX(90deg) rotateY(360deg) rotateZ(0deg);
+		-webkit-animation: anim_face5 10s infinite;
+	}
+	#f6{
+		-webkit-transform: rotateX(270deg) rotateY(360deg) rotateZ(0deg);
+		-webkit-animation: anim_face6 10s infinite;
+	}
+	@-webkit-keyframes anim_face1 {
+	 	0% {
+	 		-webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	 	}
+	 	12.5% {
+	 		-webkit-transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg);
+	 	}
+	 	25% {
+	 		-webkit-transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+	 	}
+	 	37.5% {
+	 		-webkit-transform: rotateX(0deg) rotateY(270deg) rotateZ(0deg);
+	 	}
+	 	50% {
+	 		-webkit-transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+	 	}
+	 	62.5% {
+	 		-webkit-transform: rotateX(90deg) rotateY(360deg) rotateZ(0deg);
+	 	}
+	 	75% {
+	 		-webkit-transform: rotateX(180deg) rotateY(360deg) rotateZ(0deg);
+	 	}
+	 	87.5% {
+	 		-webkit-transform: rotateX(270deg) rotateY(360deg) rotateZ(0deg);
+	 	}
+	 	100% {
+	 		-webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(0deg);
+	 	}
+	}
+	@-webkit-keyframes anim_face2 {
+	 	0% {
+	 		-webkit-transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg);
+	 	}
+	 	12.5% {
+	 		-webkit-transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+	 	}
+	 	25% {
+	 		-webkit-transform: rotateX(0deg) rotateY(270deg) rotateZ(0deg);
+	 	}
+	 	37.5% {
+	 		-webkit-transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+	 	}
+	 	50% {
+	 		-webkit-transform: rotateX(0deg) rotateY(450deg) rotateZ(0deg);
+	 	}
+	 	62.5% {
+	 		-webkit-transform: rotateX(90deg) rotateY(450deg) rotateZ(0deg);
+	 	}
+	 	75% {
+	 		-webkit-transform: rotateX(180deg) rotateY(450deg) rotateZ(0deg);
+	 	}
+	 	87.5% {
+	 		-webkit-transform: rotateX(270deg) rotateY(450deg) rotateZ(0deg);
+	 	}
+	 	100% {
+	 		-webkit-transform: rotateX(360deg) rotateY(450deg) rotateZ(0deg);
+	 	}
+	}
+	@-webkit-keyframes anim_face3 {
+	 	0% {
+	 		-webkit-transform: rotateX(0deg) rotateY(270deg) rotateZ(0deg);
+	 	}
+	 	12.5% {
+	 		-webkit-transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+	 	}
+	 	25% {
+	 		-webkit-transform: rotateX(0deg) rotateY(450deg) rotateZ(0deg);
+	 	}
+	 	37.5% {
+	 		-webkit-transform: rotateX(0deg) rotateY(540deg) rotateZ(0deg);
+	 	}
+	 	50% {
+	 		-webkit-transform: rotateX(0deg) rotateY(630deg) rotateZ(0deg);
+	 	}
+	 	62.5% {
+	 		-webkit-transform: rotateX(90deg) rotateY(630deg) rotateZ(0deg);
+	 	}
+	 	75% {
+	 		-webkit-transform: rotateX(180deg) rotateY(630deg) rotateZ(0deg);
+	 	}
+	 	87.5% {
+	 		-webkit-transform: rotateX(270deg) rotateY(630deg) rotateZ(0deg);
+	 	}
+	 	100% {
+	 		-webkit-transform: rotateX(360deg) rotateY(630deg) rotateZ(0deg);
+	 	}
+	}
+	@-webkit-keyframes anim_face4 {
+	 	0% {
+	 		-webkit-transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+	 	}
+	 	12.5% {
+	 		-webkit-transform: rotateX(0deg) rotateY(270deg) rotateZ(0deg);
+	 	}
+	 	25% {
+	 		-webkit-transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+	 	}
+	 	37.5% {
+	 		-webkit-transform: rotateX(0deg) rotateY(450deg) rotateZ(0deg);
+	 	}
+	 	50% {
+	 		-webkit-transform: rotateX(0deg) rotateY(540deg) rotateZ(0deg);
+	 	}
+	 	62.5% {
+	 		-webkit-transform: rotateX(90deg) rotateY(540deg) rotateZ(0deg);
+	 	}
+	 	75% {
+	 		-webkit-transform: rotateX(180deg) rotateY(540deg) rotateZ(0deg);
+	 	}
+	 	87.5% {
+	 		-webkit-transform: rotateX(270deg) rotateY(540deg) rotateZ(0deg);
+	 	}
+	 	100% {
+	 		-webkit-transform: rotateX(360deg) rotateY(540deg) rotateZ(0deg);
+	 	}
+	}
+	@-webkit-keyframes anim_face5 {
+	 	0% {
+	 		-webkit-transform: rotateX(90deg) rotateY(360deg) rotateZ(0deg);
+	 	}
+	 	12.5% {
+	 		-webkit-transform: rotateX(90deg) rotateY(450deg) rotateZ(0deg);
+	 	}
+	 	25% {
+	 		-webkit-transform: rotateX(90deg) rotateY(540deg) rotateZ(0deg);
+	 	}
+	 	37.5% {
+	 		-webkit-transform: rotateX(90deg) rotateY(630deg) rotateZ(0deg);
+	 	}
+	 	50% {
+	 		-webkit-transform: rotateX(90deg) rotateY(720deg) rotateZ(0deg);
+	 	}
+	 	62.5% {
+	 		-webkit-transform: rotateX(180deg) rotateY(720deg) rotateZ(0deg);
+	 	}
+	 	75% {
+	 		-webkit-transform: rotateX(270deg) rotateY(720deg) rotateZ(0deg);
+	 	}
+	 	87.5% {
+	 		-webkit-transform: rotateX(360deg) rotateY(720deg) rotateZ(0deg);
+	 	}
+	 	100% {
+	 		-webkit-transform: rotateX(450deg) rotateY(720deg) rotateZ(0deg);
+	 	}
+	}
+	@-webkit-keyframes anim_face6 {
+	 	0% {
+	 		-webkit-transform: rotateX(270deg) rotateY(360deg) rotateZ(0deg);
+	 	}
+	 	12.5% {
+	 		-webkit-transform: rotateX(270deg) rotateY(450deg) rotateZ(0deg);
+	 	}
+	 	25% {
+	 		-webkit-transform: rotateX(270deg) rotateY(540deg) rotateZ(0deg);
+	 	}
+	 	37.5% {
+	 		-webkit-transform: rotateX(270deg) rotateY(630deg) rotateZ(0deg);
+	 	}
+	 	50% {
+	 		-webkit-transform: rotateX(270deg) rotateY(720deg) rotateZ(0deg);
+	 	}
+	 	62.5% {
+	 		-webkit-transform: rotateX(360deg) rotateY(720deg) rotateZ(0deg);
+	 	}
+	 	75% {
+	 		-webkit-transform: rotateX(450deg) rotateY(720deg) rotateZ(0deg);
+	 	}
+	 	87.5% {
+	 		-webkit-transform: rotateX(540deg) rotateY(720deg) rotateZ(0deg);
+	 	}
+	 	100% {
+	 		-webkit-transform: rotateX(630deg) rotateY(720deg) rotateZ(0deg);
+	 	}
+	}
+	</style>
+</head>
+<body>
+     <div id="f1" class="face">f1</div>
+     <div id="f2" class="face">f2</div>
+     <div id="f3" class="face">f3</div>
+     <div id="f4" class="face">f4</div>
+     <div id="f5" class="face">f5</div>
+     <div id="f6" class="face">f6</div>
+
+</body>
+</html>
