@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SetInterval</title>
+	<link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+<p id="trav"></p>
+<script type="text/javascript">
+ var x = [ "abc", "def", "ghi"];
+ document.getElementById("trav").innerHTML=x[0];
+ setInterval(loop,3000);
+/* setInterval(loop1,3000);*/
+ /*document.getElementById("trav").innerHTML=setInterval(travarr,3000);
+	for(i = 0;i < x.length;i++)
+		{setInterval(loop,3000);*/
+  function loop()
+    { document.getElementById("trav").innerHTML=x[1];
+     setInterval(loop1,3000);}
+  function loop1()
+    {document.getElementById("trav").innerHTML=x[2];}
+</script>
+
+</body>
+</html>
