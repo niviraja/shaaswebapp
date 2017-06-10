@@ -1,0 +1,30 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+<script>
+
+$(function() {
+
+var entries = [];
+var dmJSON = "http://api.dailymile.com/entries.json?callback=?";
+$.getJSON( dmJSON, function(data) 
+{
+   $.each(data.entries, function(i, f) {
+      var tblRow = "<tr>" + "<td>" + f.id + "</td>" + "<td>" + f.user.username + "</td>" + "<td>" + f.message + "</td>" + "<td> " + f.location + "</td>" +  "<td>" + f.at + "</td>" + "</tr>"
+       $(tblRow).appendTo("body");
+ });
+
+}
+);
+
+});
+</script>
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>
