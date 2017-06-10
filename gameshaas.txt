@@ -1,0 +1,7 @@
+Regarding that game ideation in the website,I just took two websites one normal(google homepage) and the other with a game (mechanica website).
+I compared them using a website that tests the time for loading,speed,time for the responsiveness of the website,no. of requests made to the web server,no. of bytes fetched etc.
+The observations I made were:
+1.The loading time and the time taken by the page to respond to the user was more for the website with game.
+2.The game website fetched a lot of bytes compared to the normal one.
+3.The number of requests made by the webpage to the server was more in number.So,if too many users use the website at the same time,too many requests will be sent to the server and they'll start queuing up which will lead to temporary unavailability of the service by the server.
+So if we are able to manage with the loading time and increase the max. limit on the requests that can be handled by the server at the same time, then having a game won't be a problem in the shaastra website. 
